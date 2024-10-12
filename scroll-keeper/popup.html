@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scroll Position Saver</title>
+    <style>
+      body {
+        max-width: fit-content;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+      }
+
+      button {
+        margin: 5px;
+        padding: 12px 20px;
+        width: 100%;
+        background: #6c63ff;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background: #5a55d9;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+      }
+
+      button:active {
+        background: #483ca8;
+        box-shadow: none;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="save">Save Position</button>
+    <button id="restore">Restore Position</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
